@@ -28,7 +28,7 @@ $ license --help
 
 ## Demo
 
-![](https://github.com/bukinoshita/license-me/blob/master/demo.gif)
+![](https://github.com/bukinoshita/license-me-cli/blob/master/demo.gif)
 
 ## Related
 
