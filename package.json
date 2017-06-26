@@ -1,0 +1,58 @@
+{
+  "name": "license-me-cli",
+  "version": "0.0.0",
+  "description": "Create a license for your project",
+  "main": "index.js",
+  "repository": "git@github.com:bukinoshita/license-me-cli.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "xo --quiet"
+  },
+  "bin": {
+    "license": "index.js"
+  },
+  "keywords": [
+    "license",
+    "license-me",
+    "mit",
+    "github"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "inquirer": "^3.1.1",
+    "license-me": "^0.0.2",
+    "meow": "^3.7.0",
+    "node-caching": "^0.0.1",
+    "node-persist": "^2.0.11",
+    "shout-success": "^0.0.1",
+    "update-notifier": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.2.0",
+    "husky": "^0.14.1",
+    "lint-staged": "^4.0.0",
+    "prettier": "^1.4.4",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": [
+      "prettier"
+    ],
+    "space": true,
+    "semicolon": false,
+    "esnext": true,
+    "rules": {
+      "object-curly-spacing": 0,
+      "object-shorthand": 0
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "prettier --semi false --single-quote --write",
+      "git add"
+    ]
+  },
+  "license": "MIT"
+}
