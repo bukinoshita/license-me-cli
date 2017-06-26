@@ -1,10 +1,10 @@
-# license-me [![Build Status](https://travis-ci.org/bukinoshita/license-me.svg?branch=master)](https://travis-ci.org/bukinoshita/license-me)
+# license-me-cli [![Build Status](https://travis-ci.org/bukinoshita/license-me-cli.svg?branch=master)](https://travis-ci.org/bukinoshita/license-me-cli)
 
 > Create a license for your project
 
 ## Install
 ```bash
-$ npm install -g license-me
+$ npm install -g license-me-cli
 ```
 
 ## Usage
